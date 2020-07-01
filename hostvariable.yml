@@ -1,0 +1,10 @@
+- hosts: linux
+  vars:
+    http_port: 78
+  tasks:
+  - name: printing host inline valiable
+    debug: 
+      msg: "http port number is {{ http_port }}"
+  - name: printing host valraible in group level
+    debug:
+      msg: "port # is {{ port }}"

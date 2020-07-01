@@ -1,0 +1,7 @@
+- hosts: windows
+  tasks:
+  - name: Stop Plug and play service
+    win_service:
+      name: "Plug and Play"
+      state: started
+      start_mode: auto
